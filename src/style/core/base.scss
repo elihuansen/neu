@@ -1,0 +1,86 @@
+@import '~ress/ress.css';
+@import '../themes/default';
+
+html {
+  font-family: 'Fira Code', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: $bg-color;
+}
+div,
+input,
+select:focus {
+  outline: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6A7894;
+  opacity: 1; /* Firefox */
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+div,
+p,
+span {
+  color: #6A7894;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.neu-container {
+  position: relative;
+  display: flex;
+  align-content: center;
+  box-shadow: -2px -2px 6px 1px white,
+              2px 2px 6px 1px #cdd3e7;
+  border-radius: 3px;
+  padding: 5px;
+  min-width: 150px;
+  width: 400px;
+  transition: all $transition-duration;
+
+  &-icon {
+    @extend .neu-container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.neu-container:hover,
+.neu-container:focus {
+  box-shadow: -3px -3px 8px 2px white,
+              3px 3px 8px 2px #cdd3e7;
+}
+.neu-container.indent {
+  box-shadow: inset -3px -3px 8px white,
+              inset 3px 3px 8px #cdd3e7;
+}
+
+.neu-field {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  overflow: auto;
+}
+
+.neu-icon {
+
+}
