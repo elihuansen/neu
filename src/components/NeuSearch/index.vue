@@ -22,6 +22,7 @@
   let t;
 
   export default {
+    name: 'NeuSearch',
     props: ['placeholder', 'delay', 'async', 'options'],
     components: {NueList, NeuInput},
     data() {

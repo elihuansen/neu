@@ -17,6 +17,7 @@
   const MENU_ITEM_HEIGHT = 50;
 
   export default {
+    name: 'NeuList',
     props: ['options', 'collapsed', 'loading'],
 
     methods: {

@@ -11,6 +11,7 @@
 
 <script>
   export default {
+    name: 'NeuButton',
     data() {
       return {
         clicked: false,
