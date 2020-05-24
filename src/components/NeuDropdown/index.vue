@@ -20,7 +20,7 @@
   import NueList from "../NeuList/index";
 
   export default {
-    name: 'NeuMenu',
+    name: 'NeuDropdown',
     components: {NueList, NueIcon},
     props: ['options', 'placeholder'],
 

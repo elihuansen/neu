@@ -17,7 +17,7 @@
                    @select="handleSelect" />
         <br/>
         <div class="flex">
-          <NeuMenu style="flex: 1"
+          <NeuDropdown style="flex: 1"
                    placeholder="Industry"
                    :options="options"
                    @select="handleSelect"/>
@@ -43,7 +43,7 @@
           and professionals to implement the technology for you:
         </p>
         <div class="flex">
-          <NeuMenu style="flex: 1"
+          <NeuDropdown style="flex: 1"
                    placeholder="Software Type"
                    :options="options"
                    @select="handleSelect"/>
@@ -62,13 +62,13 @@
 </template>
 
 <script>
-  import NeuMenu from "./NeuMenu/index";
+  import NeuDropdown from "./NeuDropdown/index";
   import NeuButton from "./NeuButton/index";
   import NueSearch from "./NeuSearch/index";
   import "../style/index.scss";
   export default {
     name: "index",
-    components: {NeuMenu, NueSearch, NeuButton },
+    components: {NeuDropdown, NueSearch, NeuButton },
 
     data() {
       return {
