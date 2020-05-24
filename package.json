@@ -1,13 +1,17 @@
 {
-  "name": "neui",
+  "name": "neuu",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/neuu.umd.js",
+  "module": "dist/neuu.common.js",
+  "unpkg": "dist/neuu.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "build-bundle": "vue-cli-service build --target lib --name neui ./src/components/index.js"
+    "build-bundle": "vue-cli-service build --target lib --name neuu ./src/index.js",
+    "dev-watch": "vue-cli-service build --target lib --name neuu ./src/index.js --watch --mode development"
   },
   "dependencies": {
     "core-js": "^3.6.4",
